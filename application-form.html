@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Application Form</title>
+</head>
+
+
+<body>
+    <h1>Employment Application</h1>
+    <p id="instructions">Please complete all the fields and then hit submit. </p>
+    <form action="/application-success" method="POST">
+        <div class="user-data">
+            <label for="firstname">First Name:</label>
+            <input id="firstname" type="text" name="firstName">
+            <label for="lastname">Last Name:</label>
+            <input id="lastname" type="text" name="lastName">
+            <br>
+            <label for="salaryrequirements">Salary Requirements:</label>
+            <input id ="salaryrequirements" type="text" name="salaryRequirements">
+            <br>
+            <label for="postions"> Position you are applying for</label>
+            <br>
+            <select id="positions" name="position">
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="Product Manager">Product Manager</option>
+            </select>
+            <br>
+            <input type="submit">
+        </div>
+
+    </form>
+
+</body>
+</html>
